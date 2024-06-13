@@ -1,0 +1,33 @@
+.head-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.head-bar_title {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.head-bar_badge {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.2rem 0.6rem;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+}
+
+.head-bar_button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: transparent;
+    font-size: 1.2rem;
+}
+
+.head-bar_button:hover,
+.head-bar_button:focus {
+    color: var(--blue);
+}

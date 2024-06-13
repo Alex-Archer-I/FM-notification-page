@@ -1,0 +1,88 @@
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    width: 100%;
+}
+
+.notes_item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.9rem;
+    padding: 1rem 0.9rem;
+    border-radius: 20px;
+}
+
+.notes_img {
+    width: 40px;
+}
+
+.notes_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 2;
+}
+
+.notes_link {
+    text-decoration: none;
+    color: var(--dark-graish-blue);
+    font-weight: 800;
+    transition: color 0.2s;
+}
+
+.notes_link-name {
+    color: var(--very-dark-blue);
+}
+
+.notes_link-endtext {
+    margin-right: 0.5rem;
+}
+
+.notes_link:hover,
+.notes_link:focus {
+    color: var(--blue);
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--graish-blue);
+}
+
+.text-date {
+    opacity: 0.8;
+}
+
+.text-main {
+    margin: 0 0.5rem;
+}
+
+.notes_text-message {
+    text-decoration: none;
+    display: block;
+    border: solid 0.05rem var(--graish-blue);
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+}
+
+.notes_text-message:hover,
+.notes_text-message:focus {
+    background-color: var(--light-grayish-blue-2);
+}
+
+.notes_text-unread {
+    background-color: var(--very-light-grayish-blue);
+}
+
+.notes_text-unread .text:after {
+    content: '';
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--red);
+    border-radius: 100%;
+    animation: glowing 2s infinite;
+}
